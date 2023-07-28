@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Locales de Repuestos</title>
+  </head>
+  <body>
+    <h5>Listado de Locales de Repuestos - {{numero}}</h5>
+
+    {% for e in datos %}
+
+    <ol>
+      <li><b>Propietario: </b>{{e['propietario']}}</li>
+      <li><b>Dirección: </b>{{e['direccion']}}</li>
+      <li><b>Barrio: </b>{{e['barrio']}}</li>
+      <li><b>Valor </b>{{e['valor']}}</li>
+      <li><b>Tipo de Comida: </b>{{e['comida']}}</li>
+      <li><b>Ventas: </b>{{e['ventas']}}</li>
+      <li><b>Valor del Permiso: </b>{{e['obtenerVentas']}}</li>
+    </ol>
+    <hr>
+    {% endfor%}
+  </body>
+</html>
