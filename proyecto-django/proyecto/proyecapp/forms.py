@@ -29,21 +29,20 @@ class PersonaForm(ModelForm):
 class LocalComidaForm(ModelForm):
     class Meta:
         model = LocalComida
-        fields = ['propietario', 'direccion', 'barrio', 'comida', 'ventas', 'permiso']
+        fields = ['propietario', 'direccion', 'barrio', 'comida', 'ventas']
         labels = {
             'propietario': _('Ingrese el nombre'),
             'direccion': _('Ingrese la direccion'),
             'barrio': _('Seleccione  el barrio'),
             'comida': _('Ingrese el tipo de comida'),
             'ventas': _('Ingrese el valor de ventas'),
-            'permido': _('Ingrese el valor del permiso'),
         }
 
 
 class LocalRepuestoForm(ModelForm):
     class Meta:
         model = LocalRepuesto
-        fields = ['propietario', 'direccion', 'barrio', 'valor', 'comida', 'ventas', 'permiso']
+        fields = ['propietario', 'direccion', 'barrio', 'valor', 'comida', 'ventas']
         labels = {
             'propietario': _('Ingrese el nombre'),
             'direccion': _('Ingrese la direccion'),
@@ -51,5 +50,4 @@ class LocalRepuestoForm(ModelForm):
             'valor': _('Ingrese el valor'),
             'comida': _('Ingrese el tipo de comida'),
             'ventas': _('Ingrese el valor de ventas'),
-            'permido': _('Ingrese el valor del permiso'),
         }        

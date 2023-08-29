@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Proyecto Bimestral</title>
+</head>
+<body>
+    <h3>Listados:</h3>
+<nav>
+    <ul>
+        <li><a href="{{ url_for('personas') }}">Listado de personas</a></li>
+        <li><a href="{{ url_for('barrios') }}">Listado de barrios</a></li>
+        <li><a href="{{ url_for('localesCo') }}">Locales Comerciales</a></li>
+        <li><a href="{{ url_for('localesRe') }}">Locales Residenciales</a></li>
+    </ul>
+</nav>
+
+<div>
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

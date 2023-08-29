@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <title>Locales de Comida</title>
   </head>
   <body>
+    
     <h5>Listado de Locales de Comida - {{numero}}</h5>
 
     {% for e in datos %}
@@ -16,7 +18,7 @@
       <li><b>Barrio: </b>{{e['barrio']}}</li>
       <li><b>Tipo de Comida: </b>{{e['comida']}}</li>
       <li><b>Ventas: </b>{{e['ventas']}}</li>
-      <li><b>Valor del Permiso: </b>{{e['obtenerVentas']}}</li>
+      <li><b>Valor del Permiso: </b>{{e['permiso']}}</li>
     </ol>
     <hr>
     {% endfor%}

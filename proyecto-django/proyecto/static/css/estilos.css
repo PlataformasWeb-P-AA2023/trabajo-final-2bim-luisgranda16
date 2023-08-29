@@ -4,7 +4,7 @@ body {
   /*background: #FEFEFD;*/
   background: #FEFEFD;
   padding: 30px;
-  
+
 }
 
 header {
@@ -15,15 +15,6 @@ header {
 
 section {
   width: 100%;
-}
-
-h1 {
-  margin-bottom: 0px;
-}
-
-h3 {
-  margin-top: 0px;
-  background-color: beige;
 }
 
 th, td {
@@ -41,7 +32,7 @@ input[type=text], input[type=number] {
   box-sizing: border-box;
 }
 
-input[type=text]:focus, input[type=number]:focus {
+input[type=text|number]:focus {
   border: 3px solid blue;
 }
 
@@ -62,6 +53,9 @@ label {
   width: 40%;
 }
 
+.nombre_usuario {
+  color: red;
+}
 
 /*Menu */
 /*
@@ -69,11 +63,10 @@ label {
  */
 .top_menu ul
 {
-  background: goldenrod;
   list-style:none;
   float:left;
   padding: 5px;
-  width:100%;
+  width:95%;
 }
 
 .top_menu ul li
